@@ -40,7 +40,7 @@ public class ManejoArchivos {
 
         File archivo = new File(nombreArchivo);
         try {
-            PrintWriter salida = new PrintWriter(new FileWriter(archivo, true));
+            var salida = new PrintWriter(new FileWriter(archivo, true));
             salida.println(contenido);
             salida.close();
             System.out.println("Se ha anexado informacion al archivo archivo");
