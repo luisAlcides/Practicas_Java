@@ -13,6 +13,9 @@ public class TestManejoPersonas {
         //Insertando un nuevo objeto de tipo Persona
         Persona personaNueva = new Persona("Carlos", "Esparza", "carlos@gmail.com", "87456231");
         personaDAO.insertar(personaNueva);
+        
+        //Modificando Datos 
+        Persona personaModificar = new Persona(4);
 
         List<Persona> personas = personaDAO.seleccionar();
 
