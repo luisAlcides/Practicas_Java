@@ -1,0 +1,2317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="bgTipoRegimen">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgDocID">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgSexo">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgDocIDRepresentante">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgDuracionR">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgSiNoIF">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgSINOPro">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[790, 650]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabPrincipal" alignment="1" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jTabPrincipal" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabPrincipal">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e1" green="e6" red="e7" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPFormularioDatos">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="52" green="4e" red="31" type="rgb"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[749, 620]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Formulario-Datos">
+                <Property name="tabTitle" type="java.lang.String" value="Formulario-Datos"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparator2" alignment="1" pref="958" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="jLbFormularioDatos" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jSeparator5" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLbPrimerApellido" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTFPrimerApellido" min="-2" pref="212" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Component id="jLbPrimerNombre" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTFPrimerNombre" min="-2" pref="212" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLbSegundoApellido" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbSegundoNombre" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTFSegundoApellido" max="32767" attributes="0"/>
+                                  <Component id="jTFSegundoNombre" min="-2" pref="174" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
+                              <Component id="jTFCantidadEmpleador" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jSeparator7" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="289" max="-2" attributes="0"/>
+                              <Component id="jSeparator6" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jLbNumeroRuc" min="-2" pref="104" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFNumeroRuc" min="-2" pref="201" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSeparator1" min="-2" pref="15" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLbFecha" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jFTFFecha" min="-2" pref="78" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="jLbTipoRegimen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSeparator3" min="-2" pref="15" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jCBGeneral" min="-2" pref="93" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jCBCFNormal" min="-2" pref="133" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jCBCFMypime" min="-2" pref="137" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="jCBCFMypimeEspecial" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jCBDocIDCedulaIdentidad" min="-2" pref="128" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jCBDocIDCedulaResidencia" min="-2" pref="134" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                      <Component id="jCBDocIDPasaporte" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLbDocIDNumero" min="-2" pref="71" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFDocIDNumero" min="-2" pref="257" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLbDocIdentificacion" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSeparator4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLbNoRegistroCedulaResidencia" min="-2" pref="239" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jLbFechaVencimiento" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLbFechaEmision" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jFTFFechaEmision" max="32767" attributes="0"/>
+                                          <Component id="jFTFFechaVencimiento" min="-2" pref="108" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLbNombreComercial" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFNombreComercial" min="-2" pref="212" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                              <Component id="jLbNumINSS" min="-2" pref="66" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFNumINSS" min="-2" pref="48" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="jLbCantidadEmpleador" min="-2" pref="133" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLbEntidadRegulatoria" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                                          <Component id="jLbFechaCertificacion" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLbFechaEmision1" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jFTFFechaEmision1" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jTFEntidadRegulatoria" max="32767" attributes="0"/>
+                                      <Component id="jFTFFechaVencimiento1" min="-2" pref="99" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLbRegistroInstitucionReg" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbNacionalidad" min="-2" pref="102" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFNacionalidad" min="-2" pref="121" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLbSexo" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jCBSexoF" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jCBSexoM" min="-2" pref="56" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jTFRegistroInstitucionReg" alignment="0" min="-2" pref="260" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLbFormularioDatos" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="jSeparator1" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jLbNumeroRuc" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTFNumeroRuc" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                              <Component id="jLbFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jFTFFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLbTipoRegimen" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSeparator3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                              <Component id="jCBGeneral" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCBCFNormal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCBCFMypime" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCBCFMypimeEspecial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbDocIdentificacion" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jCBDocIDCedulaIdentidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBDocIDCedulaResidencia" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBDocIDPasaporte" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFDocIDNumero" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="jLbDocIDNumero" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jSeparator4" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbNoRegistroCedulaResidencia" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbFechaEmision" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jFTFFechaEmision" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbFechaVencimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jFTFFechaVencimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSeparator5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbSegundoApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTFSegundoApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFSegundoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbSegundoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFPrimerApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbPrimerApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFPrimerNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbPrimerNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTFNombreComercial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNombreComercial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNumINSS" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNumINSS" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbCantidadEmpleador" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jFTFFechaEmision1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbFechaEmision1" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jTFEntidadRegulatoria" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbEntidadRegulatoria" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jFTFFechaVencimiento1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbFechaCertificacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFNacionalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbNacionalidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbSexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBSexoF" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBSexoM" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLbRegistroInstitucionReg" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFRegistroInstitucionReg" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="238" max="32767" attributes="0"/>
+                      <Component id="jTFCantidadEmpleador" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="30" max="32767" attributes="0"/>
+                      <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jSeparator6" min="-2" pref="94" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbFormularioDatos">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="14" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Formulario De Inscripcion  Contribuyente Persona Natural"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNumeroRuc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1. Numero RUC:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNumeroRuc">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="(Uso exclusivo de la D.G.I) "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[743, 10]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[743, 10]"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFecha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2. Fecha: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFecha">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTipoRegimen">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="3. Tipo de Regimen"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator3">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBGeneral">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgTipoRegimen"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="General"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBCFNormal">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgTipoRegimen"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cuota Fija Normal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBCFMypime">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgTipoRegimen"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cuota Fija Mypime"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCBCFMypimeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBCFMypimeEspecial">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgTipoRegimen"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cuota Fija Mypime Especial"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCBCFMypimeEspecialActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="66" red="0" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="14" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Datos B&#xe1;sicos"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                    <MatteColorBorder>
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </MatteColorBorder>
+                  </Border>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Default Cursor"/>
+                </Property>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[20, 20]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[20, 20]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[20, 20]"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDocIdentificacion">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="4. Documento Identificacion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDCedulaIdentidad">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocID"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cedula Identidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDCedulaResidencia">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocID"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cedula Residencia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDPasaporte">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocID"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pasaporte"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDocIDNumero">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Numero"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDocIDNumero">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator5">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNoRegistroCedulaResidencia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="5. No de Registro de Cedula de Residencia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaEmision">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="6.Fecha de Emision"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaVencimiento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha Vencimiento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaEmision">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaVencimiento">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPrimerApellido">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPrimerApellido">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="7. Primer Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSegundoNombre">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSegundoNombre">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10. Segundo Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSegundoApellido">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="8. Segundo Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSegundoApellido">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPrimerNombre">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPrimerNombre">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="9. Primer Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNombreComercial">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="11. Nombre Comercial"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNombreComercial">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNumINSS">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="12. N&#xb0; INSS"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNumINSS">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCantidadEmpleador">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="13.Cantidad Empleador"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCantidadEmpleador">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator7">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaEmision1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="14. Fecha de Nacimiento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaEmision1">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNacionalidad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="15. Nacionalidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNacionalidad">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSexo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="16. Sexo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBSexoF">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSexo"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="F"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBSexoM">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSexo"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="M"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbEntidadRegulatoria">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="17. Entidad Regulatoria"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaCertificacion">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="19. Fecha Certificacion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaVencimiento1">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFEntidadRegulatoria">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbRegistroInstitucionReg">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="18. N&#xb0; Registro Institucion Regulatoria"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFRegistroInstitucionReg">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator6">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPDomicilio">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Domicilio Tributario">
+                <Property name="tabTitle" type="java.lang.String" value="Domicilio Tributario"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLbApartadoPostal" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFApartadoPostal" min="-2" pref="142" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLbTelefono" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jTFTelefono" min="-2" pref="142" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jLbFax" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTFFax" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLbEmail" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTFEmail" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLbDireccion" min="-2" pref="86" max="-2" attributes="0"/>
+                                      <Component id="jLbDepartamento" min="-2" pref="99" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jSPDireccion" min="-2" pref="563" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jTFDepartamento" min="-2" pref="142" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                          <Component id="jLbMunicipio" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTFMunicipio" min="-2" pref="142" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jLbDistrito" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTFDistrito" min="-2" pref="96" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLbSectorTerritorial" min="-2" pref="119" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTFSectorTerritorial" min="-2" pref="157" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLbNombreSector" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jTFNombreSector" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLbNumCasa" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTFNumCasa" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbPaginaWb" min="-2" pref="99" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTFPaginaWb" min="-2" pref="498" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbRentaAdsc" min="-2" pref="147" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFRentaAdsc" min="-2" pref="434" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="268" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbRentaAdsc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFRentaAdsc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbSectorTerritorial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFSectorTerritorial" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNombreSector" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNombreSector" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNumCasa" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNumCasa" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="jLbDireccion" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="jSPDireccion" min="-2" pref="84" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDistrito" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbMunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbDistrito" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFMunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTFApartadoPostal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbApartadoPostal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbFax" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFFax" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbPaginaWb" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFPaginaWb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="567" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbRentaAdsc">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="20. Renta de Adscripcion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFRentaAdsc">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSectorTerritorial">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="21. Sector Territorial"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDireccion">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="24. Direccion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDepartamento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="25. Departamento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMunicipio">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="26. Municipio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDistrito">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="27. Distrito"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPaginaWb">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="32. Pagina web"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSectorTerritorial">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFSectorTerritorialActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNombreSector">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="22. Nombre de Sector"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNombreSector">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNumCasa">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNumCasa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="23. N&#xb0; Casa"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jSPDireccion">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTADireccion">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JTextField" name="jTFDistrito">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDepartamento">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFMunicipio">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbApartadoPostal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="28. Apartado Postal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFApartadoPostal">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTelefono">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="29. Telefono"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFTelefono">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFFax">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFax">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="30. Fax"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFEmail">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbEmail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="31. Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPaginaWb">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="DireccionPersonal">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Direccion Personal">
+                <Property name="tabTitle" type="java.lang.String" value="Direccion Personal"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="jLbSt" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFST" min="-2" pref="158" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLbNS" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFNS" min="-2" pref="158" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLbNC" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFNC" min="-2" pref="44" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLbDir" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane1" min="-2" pref="578" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLbDep" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLbAp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jTFAp" min="-2" pref="184" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jTFDep" min="-2" pref="158" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jLbMun" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFMun" min="-2" pref="158" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="jLbDis" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFDis" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbtel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFtel" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLbTFX" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFFx" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLbMail" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFMail" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="239" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbSt" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFST" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNS" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNS" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNC" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNC" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="82" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jLbDir" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbDep" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDep" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbMun" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFMun" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbDis" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDis" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbAp" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFAp" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbtel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFtel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbTFX" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFFx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="653" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbSt">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="33. Sector Territorial "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFST">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNS">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNS">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="34.Nombre Sector"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNC">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNC">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="35. N&#xba; Casa"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="36. Direccion "/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTADir">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLbDep">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="37. Departamento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDep">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMun">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="38.Municipio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFMun">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDis">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="39. Distrito"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDis">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFAp">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbAp">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="40. Apartado Postal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbtel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="41. Telefono"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFtel">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTFX">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="42. Fax"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFFx">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMail">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="43. Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFMail">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPrepresentanteLegal">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Representante Legal">
+                <Property name="tabTitle" type="java.lang.String" value="Representante Legal"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jSeparatorR" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLbPrimerApellidoR" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jTFPrimerApellidoR" min="-2" pref="212" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLbPrimerNombreR" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jTFPrimerNombreR" min="-2" pref="212" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLbSegundoApellidoR" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLbSegundoNombreR" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jTFSegundoApellidoR" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jTFSegundoNombreR" alignment="0" min="-2" pref="174" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbApartadoPostalR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFApartadoPostalR" min="-2" pref="142" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLbTelefonoR" min="-2" pref="99" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jTFTelefonoR" min="-2" pref="142" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                          <Component id="jLbFaxR" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTFFaxR" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLbEmailR" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTFEmailR" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLbDireccionR" alignment="0" min="-2" pref="86" max="-2" attributes="0"/>
+                                              <Component id="jLbDepartamentoR" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="jTFDepartamentoR" min="-2" pref="142" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                                  <Component id="jLbMunicipio1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jTFMunicipioR" min="-2" pref="142" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                                  <Component id="jLbDistritoR" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jTFDistritoR" min="-2" pref="96" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="jTFNombreSectorR" min="-2" pref="145" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jLbNumCasa1" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jTFNumCasaR" min="-2" pref="35" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="jSPDireccion1" min="-2" pref="563" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLbSectorTerritorialR" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jTFSectorTerritorialR" min="-2" pref="157" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jLbNombreSectorR" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLbDocIdentificacionR" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jCBDocIDCedulaIdentidadR" min="-2" pref="128" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jCBDocIDCedulaResidenciaR" min="-2" pref="134" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                              <Component id="jCBDocIDPasaporteR" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLbDocIDNumeroR" min="-2" pref="71" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFDocIDNumeroR" min="-2" pref="257" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSeparator9R" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLbNoRegistroCedulaResidenciaR" alignment="0" min="-2" pref="239" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="jLbFechaVencimientoR" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="jLbFechaEmisionR" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jFTFFechaEmisionR" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="jFTFFechaVencimientoR" alignment="0" min="-2" pref="108" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbCargoR" min="-2" pref="79" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTFCargoR" min="-2" pref="125" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLbPeriodoDuracionR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jCBIndifinidoR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jCBDefinidoR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLbFechaInicioR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jFTFFechaInicioR" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLbFechaFinR" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jFTFFechaFinR" min="-2" pref="60" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbNumEscritura" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jTFNumEscritura" min="-2" pref="142" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+                                      <Component id="jLbAnoEscritura" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jTFAnoEscritura" min="-2" pref="130" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbEmail2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jTFEmail2" min="-2" pref="494" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="171" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbDocIdentificacionR" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jCBDocIDCedulaIdentidadR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBDocIDCedulaResidenciaR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCBDocIDPasaporteR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFDocIDNumeroR" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="jLbDocIDNumeroR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jSeparator9R" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLbNoRegistroCedulaResidenciaR" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbFechaEmisionR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jFTFFechaEmisionR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbFechaVencimientoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jFTFFechaVencimientoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jSeparatorR" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLbSegundoApellidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTFSegundoApellidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFSegundoNombreR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbSegundoNombreR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFPrimerApellidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbPrimerApellidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTFPrimerNombreR" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbPrimerNombreR" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbCargoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFCargoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbPeriodoDuracionR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBIndifinidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBDefinidoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbFechaInicioR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFTFFechaInicioR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbFechaFinR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFTFFechaFinR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbSectorTerritorialR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFSectorTerritorialR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNombreSectorR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNombreSectorR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbNumCasa1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNumCasaR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="jLbDireccionR" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSPDireccion1" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbDepartamentoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDistritoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbMunicipio1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFDepartamentoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFMunicipioR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbDistritoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTFApartadoPostalR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbApartadoPostalR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbTelefonoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFEmailR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFTelefonoR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFFaxR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbFaxR" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbEmailR" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbNumEscritura" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFNumEscritura" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFAnoEscritura" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbAnoEscritura" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbEmail2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFEmail2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="418" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbPrimerApellidoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="47. Primer Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaEmisionR">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDCedulaResidenciaR">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocIDRepresentante"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cedula Residencia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPrimerApellidoR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDocIDNumeroR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPrimerNombreR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaVencimientoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha Vencimiento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDPasaporteR">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocIDRepresentante"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pasaporte"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaEmisionR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="46.Fecha de Emision"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDocIDNumeroR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Numero"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDocIDCedulaIdentidadR">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDocIDRepresentante"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cedula Identidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparatorR">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSegundoApellidoR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSegundoNombreR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPrimerNombreR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="49. Primer Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaVencimientoR">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNoRegistroCedulaResidenciaR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="45. No de Registro de Cedula de Residencia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDocIdentificacionR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="44. Documento Identificacion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSegundoApellidoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="48. Segundo Apellido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator9R">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSegundoNombreR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="50. Segundo Nombre"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbSectorTerritorialR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="53. Sector Territorial"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDireccionR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="56. Direccion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDepartamentoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="57. Departamento"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbMunicipio1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="58. Municipio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbDistritoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="59. Distrito"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFSectorTerritorialR">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFSectorTerritorialRActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNombreSectorR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="54. Nombre de Sector"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNombreSectorR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNumCasaR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNumCasa1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="55. N&#xb0; Casa"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jSPDireccion1">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTADireccionR">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JTextField" name="jTFDistritoR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFDepartamentoR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFMunicipioR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbApartadoPostalR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="60. Apartado Postal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFApartadoPostalR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTelefonoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="61. Telefono"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFTelefonoR">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFFaxR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFaxR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="62. Fax"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFEmailR">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbEmailR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="63. Email"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCargoR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="51. Cargo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCargoR">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFCargoRActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPeriodoDuracionR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="52. Periodo de duracion"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBIndifinidoR">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDuracionR"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Indefinido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBDefinidoR">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgDuracionR"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="definido"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaInicioR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha inicio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaInicioR">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaFinR">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaFinR">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha Fin"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbNumEscritura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="64. N&#xba; Escritura"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFNumEscritura">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbAnoEscritura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="65. A&#xf1;o Escritura"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFAnoEscritura">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbEmail2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="66. Nombre y Apellido del Notario"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFEmail2">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPActividadEconomica">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Actividad Economica">
+                <Property name="tabTitle" type="java.lang.String" value="Actividad Economica"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLbEconomicaPrincipal" min="-2" pref="189" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                      <Component id="jLbFechaInicioE" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jFTFFechaInicioE" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLbCodigoCIIU" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jTFCodigoCIIU" min="-2" pref="74" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLbEconomicaSecundaria" min="-2" pref="189" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                      <Component id="jLbFechaInicioE2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jFTFFechaInicioE2" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLbCodigoCIIUE2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jTFCodigoCIIU2" min="-2" pref="74" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="jSPEconomicaPrincipal" min="-2" pref="394" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jSPEconomicaSecundaria" min="-2" pref="394" max="-2" attributes="0"/>
+                          <EmptySpace pref="537" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbEconomicaPrincipal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbFechaInicioE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFTFFechaInicioE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbCodigoCIIU" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFCodigoCIIU" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jLbFechaInicioE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jFTFFechaInicioE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLbCodigoCIIUE2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTFCodigoCIIU2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLbEconomicaSecundaria" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jSPEconomicaPrincipal" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace pref="620" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                          <Component id="jSPEconomicaSecundaria" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace pref="783" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbEconomicaPrincipal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="67. Actividad Economica Principal"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jSPEconomicaPrincipal">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTAEconomicaPrinicpal">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLbEconomicaSecundaria">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="70. Actividad Economica Secundaria"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jSPEconomicaSecundaria">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTAEconomicaSecundaria">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLbFechaInicioE">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="68. Fecha Inicio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaInicioE">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCodigoCIIU">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="69. Codigo CIIU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCodigoCIIU">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCodigoCIIU2">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCodigoCIIUE2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="72. Codigo CIIU"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JFormattedTextField" name="jFTFFechaInicioE2">
+              <Properties>
+                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                  <Format format="##-##-####" subtype="-1" type="5"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbFechaInicioE2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="71. Fecha Inicio"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPInformacionF">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e1" green="e6" red="e7" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Informacion Financiera">
+                <Property name="tabTitle" type="java.lang.String" value="Informacion Financiera"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLbRurales" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFRurales" min="-2" pref="85" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLbValorPro" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTFValorPro" min="-2" pref="94" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLbActivoCirculante" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbCapital" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jTFCapital" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                      <Component id="jLbPasivo" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
+                                      <Component id="jTFPasivoCapital" min="-2" pref="133" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jTFActivoCirculante" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLbActivoFijo" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFActivoFijo" min="-2" pref="94" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLbOtrosActivos" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFOtrosActivos" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLbTotalActivos" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFTotalActivos" min="-2" pref="94" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jCBSiPro" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jCBNoPro" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jCBSi" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jCBNo" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLbParqueVehicular" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLbTienePropiedades" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                      <Component id="jTFPasivo" min="-2" pref="94" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="jLbPasivoCapital" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLbCantidadPro" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFCantiadPro" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLbUrbanas" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFUrbanas" min="-2" pref="94" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLbCantidad" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFCantiad" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLbValor" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jTFValor" min="-2" pref="94" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="190" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbActivoCirculante" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFActivoCirculante" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbActivoFijo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFActivoFijo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbOtrosActivos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFOtrosActivos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbTotalActivos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFTotalActivos" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbCapital" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFCapital" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbPasivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFPasivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbPasivoCapital" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFPasivoCapital" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbParqueVehicular" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBSi" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbCantidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFCantiad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbValor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFValor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbTienePropiedades" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBNoPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBSiPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbCantidadPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFCantiadPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbUrbanas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFUrbanas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLbRurales" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFRurales" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLbValorPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTFValorPro" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="696" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLbActivoCirculante">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="73. Activo Circulante"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFActivoCirculante">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFActivoFijo">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbActivoFijo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="74. Activo Fijo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFTotalActivos">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTotalActivos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="76. Activo Fijo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFOtrosActivos">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbOtrosActivos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="75. Otros Activos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCapital">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="77. Capital"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCapital">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPasivo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="78. Activo Fijo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPasivo">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbPasivoCapital">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="79. Pasivo + Capital"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFPasivoCapital">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbParqueVehicular">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="80. &#xbf;Posee parque vehicular?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBNo">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSiNoIF"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBSi">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSiNoIF"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Si"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCantidad">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="81. Cantidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCantiad">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbValor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="82. Valor"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFValor">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbTienePropiedades">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="83. &#xbf;Tiene Propiedades?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBSiPro">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSINOPro"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Si"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCBNoPro">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="bgSINOPro"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbCantidadPro">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="84. Cantidad"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFCantiadPro">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbUrbanas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="85. Urbanas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFUrbanas">
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFRurales">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbRurales">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="86. Rurales"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLbValorPro">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="87. Valor"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTFValorPro">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

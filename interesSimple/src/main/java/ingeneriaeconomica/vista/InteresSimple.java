@@ -5,7 +5,9 @@
  */
 package ingeneriaeconomica.vista;
 
-import static java.util.logging.Level.parse;
+import ingeneriaeconomica.datos.Datos;
+import ingeneriaeconomica.domain.Calculos;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,9 +37,9 @@ public class InteresSimple extends javax.swing.JFrame {
         jLCapital = new javax.swing.JLabel();
         jTFCapital = new javax.swing.JTextField();
         jLInteres = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jCBInteres = new javax.swing.JComboBox<>();
         jLPeriodo = new javax.swing.JLabel();
-        jTPeriodo = new javax.swing.JTextField();
+        jTFPeriodo = new javax.swing.JTextField();
         jBCalcular = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLTextoPeriodos = new javax.swing.JTextArea();
@@ -46,6 +48,11 @@ public class InteresSimple extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jmAbrir = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        jMIncognita = new javax.swing.JMenu();
+        jMICapital = new javax.swing.JMenuItem();
+        jMIMonto = new javax.swing.JMenuItem();
+        jMIInteres = new javax.swing.JMenuItem();
+        jMIPeriodo = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -70,19 +77,47 @@ public class InteresSimple extends javax.swing.JFrame {
         jLCapital.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLCapital.setText("Capital");
 
+        jTFCapital.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFCapitalActionPerformed(evt);
+            }
+        });
+
         jLInteres.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLInteres.setText("Interes");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Anual", "Mensual", "Bimestral", "Trimestral", "Cuatrimestral", "Diario 360", "Diario 365", " " }));
+        jCBInteres.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Anual", "Mensual", "Bimestral", "Trimestral", "Cuatrimestral", "Diario 360", "Diario 365", " " }));
+        jCBInteres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCBInteresActionPerformed(evt);
+            }
+        });
 
         jLPeriodo.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLPeriodo.setText("Periodo");
 
+        jTFPeriodo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFPeriodoActionPerformed(evt);
+            }
+        });
+
         jBCalcular.setText("Calcular");
+        jBCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCalcularActionPerformed(evt);
+            }
+        });
 
         jLTextoPeriodos.setColumns(20);
         jLTextoPeriodos.setRows(5);
         jScrollPane1.setViewportView(jLTextoPeriodos);
+
+        jTFInteres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFInteresActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -118,9 +153,9 @@ public class InteresSimple extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTFInteres, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTPeriodo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFPeriodo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jCBInteres, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(70, 70, 70))
         );
         jPanel1Layout.setVerticalGroup(
@@ -138,11 +173,11 @@ public class InteresSimple extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLInteres)
                     .addComponent(jTFInteres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jCBInteres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLPeriodo)
-                    .addComponent(jTPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(jBCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
@@ -162,10 +197,47 @@ public class InteresSimple extends javax.swing.JFrame {
         jMenu2.setText("Edit");
         jMenuBar1.add(jMenu2);
 
+        jMIncognita.setText("incognita");
+
+        jMICapital.setText("Capital");
+        jMICapital.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMICapitalActionPerformed(evt);
+            }
+        });
+        jMIncognita.add(jMICapital);
+
+        jMIMonto.setText("Monto");
+        jMIMonto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIMontoActionPerformed(evt);
+            }
+        });
+        jMIncognita.add(jMIMonto);
+
+        jMIInteres.setText("interes");
+        jMIInteres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIInteresActionPerformed(evt);
+            }
+        });
+        jMIncognita.add(jMIInteres);
+
+        jMIPeriodo.setText("Periodo");
+        jMIPeriodo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIPeriodoActionPerformed(evt);
+            }
+        });
+        jMIncognita.add(jMIPeriodo);
+
+        jMenuBar1.add(jMIncognita);
+
         setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
 
     private void formComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_formComponentAdded
         // TODO add your handling code here:
@@ -176,9 +248,130 @@ public class InteresSimple extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTFMontoActionPerformed
 
-    
-    
-       /**
+    private void jTFCapitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFCapitalActionPerformed
+
+    }//GEN-LAST:event_jTFCapitalActionPerformed
+
+    private void jTFInteresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFInteresActionPerformed
+
+    }//GEN-LAST:event_jTFInteresActionPerformed
+
+    private void jTFPeriodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFPeriodoActionPerformed
+
+    }//GEN-LAST:event_jTFPeriodoActionPerformed
+
+    private void jBCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCalcularActionPerformed
+        //JOptionPane.showMessageDialog(null, JTFMonto.getText());
+
+        double monto = 0;
+        double capital = 0;
+        double interes = 0;
+        double periodo = 0;
+
+        monto = Double.parseDouble(jTFMonto.getText());
+        capital = Double.parseDouble(jTFCapital.getText());
+        interes = Double.parseDouble(jTFInteres.getText());
+        periodo = Double.parseDouble(jTFPeriodo.getText());
+
+        double resultado = 0;
+
+        //Calcular monto
+        if (jMIMonto.isVisible() == false) {
+            if (capital > 0 && interes > 0 && periodo > 0) {
+                resultado = capital * (1 + (interes * periodo));
+
+            }
+        }
+        //Calcula capital
+
+        if (jMICapital.isVisible() == false) {
+
+            if (monto > 0 && interes > 0 && periodo > 0) {
+                resultado = monto / (1 + (interes * periodo));
+
+            }//Calcula interes
+        }
+        if (jMIInteres.isVisible() == false) {
+
+            if (monto > 0 && capital > 0 && periodo > 0) {
+                resultado = ((monto / capital) - 1) / periodo;
+            } //Calcula periodo
+        }
+
+        if (jMIPeriodo.isVisible() == false) {
+            if (monto > 0 && capital > 0 && interes > 0) {
+                resultado = ((monto / capital) - 1) / interes;
+            }
+        }
+
+        String resultadoFinal = String.valueOf(resultado);
+
+        //JOptionPane.showMessageDialog(null, "prueba");
+        jLTextoPeriodos.setText(resultadoFinal);
+    }//GEN-LAST:event_jBCalcularActionPerformed
+
+    private void jMICapitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMICapitalActionPerformed
+        // TODO add your handling code here:
+
+        jLCapital.setVisible(false);
+        jTFCapital.setVisible(false);
+        jLInteres.setVisible(true);
+        jTFInteres.setVisible(true);
+        jLMonto.setVisible(true);
+        jTFMonto.setVisible(true);
+        jLPeriodo.setVisible(true);
+        jTFPeriodo.setVisible(true);
+        jCBInteres.setVisible(true);
+
+
+    }//GEN-LAST:event_jMICapitalActionPerformed
+
+    private void jMIInteresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIInteresActionPerformed
+        // TODO add your handling code here:
+        jLInteres.setVisible(false);
+        jTFInteres.setVisible(false);
+        jLMonto.setVisible(true);
+        jTFMonto.setVisible(true);
+        jLPeriodo.setVisible(true);
+        jTFPeriodo.setVisible(true);
+        jLCapital.setVisible(true);
+        jTFCapital.setVisible(true);
+        jCBInteres.setVisible(false);
+
+    }//GEN-LAST:event_jMIInteresActionPerformed
+
+    private void jMIMontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIMontoActionPerformed
+        // TODO add your handling code here:
+        jLMonto.setVisible(false);
+        jTFMonto.setVisible(false);
+        jLInteres.setVisible(true);
+        jTFInteres.setVisible(true);
+        jLPeriodo.setVisible(true);
+        jTFPeriodo.setVisible(true);
+        jLCapital.setVisible(true);
+        jTFCapital.setVisible(true);
+        jCBInteres.setVisible(true);
+    }//GEN-LAST:event_jMIMontoActionPerformed
+
+    private void jMIPeriodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIPeriodoActionPerformed
+        // TODO add your handling code here:
+        jLPeriodo.setVisible(false);
+        jTFPeriodo.setVisible(false);
+        jLCapital.setVisible(true);
+        jTFCapital.setVisible(true);
+        jLMonto.setVisible(true);
+        jTFMonto.setVisible(true);
+        jLInteres.setVisible(true);
+        jTFInteres.setVisible(true);
+        jCBInteres.setVisible(true);
+
+    }//GEN-LAST:event_jMIPeriodoActionPerformed
+
+    private void jCBInteresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCBInteresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCBInteresActionPerformed
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
@@ -187,6 +380,7 @@ public class InteresSimple extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -211,19 +405,24 @@ public class InteresSimple extends javax.swing.JFrame {
                 new InteresSimple().setVisible(true);
             }
         });
-        
-       
-        
+
+        System.out.println("Sirve");
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBCalcular;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jCBInteres;
     private javax.swing.JLabel jLCapital;
     private javax.swing.JLabel jLInteres;
     private javax.swing.JLabel jLMonto;
     private javax.swing.JLabel jLPeriodo;
     private javax.swing.JTextArea jLTextoPeriodos;
+    private javax.swing.JMenuItem jMICapital;
+    private javax.swing.JMenuItem jMIInteres;
+    private javax.swing.JMenuItem jMIMonto;
+    private javax.swing.JMenuItem jMIPeriodo;
+    private javax.swing.JMenu jMIncognita;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
@@ -232,7 +431,7 @@ public class InteresSimple extends javax.swing.JFrame {
     private javax.swing.JTextField jTFCapital;
     private javax.swing.JTextField jTFInteres;
     private javax.swing.JTextField jTFMonto;
-    private javax.swing.JTextField jTPeriodo;
+    private javax.swing.JTextField jTFPeriodo;
     private javax.swing.JMenu jmAbrir;
     // End of variables declaration//GEN-END:variables
 }

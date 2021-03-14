@@ -21,6 +21,45 @@
             <Property name="text" type="java.lang.String" value="Edit"/>
           </Properties>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMIncognita">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="incognita"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMICapital">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Capital"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMICapitalActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMIMonto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Monto"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIMontoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMIInteres">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="interes"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIInteresActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMIPeriodo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Periodo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIPeriodoActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>
@@ -107,10 +146,10 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jTFInteres" min="-2" pref="206" max="-2" attributes="0"/>
-                      <Component id="jTPeriodo" alignment="1" min="-2" pref="212" max="-2" attributes="0"/>
+                      <Component id="jTFPeriodo" alignment="1" min="-2" pref="212" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" pref="119" max="-2" attributes="0"/>
+                  <Component id="jCBInteres" min="-2" pref="119" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -132,12 +171,12 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLInteres" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTFInteres" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCBInteres" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLPeriodo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTPeriodo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTFPeriodo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Component id="jBCalcular" min="-2" pref="32" max="-2" attributes="0"/>
@@ -171,6 +210,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTFCapital">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFCapitalActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLInteres">
           <Properties>
@@ -180,7 +222,7 @@
             <Property name="text" type="java.lang.String" value="Interes"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="jCBInteres">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="8">
@@ -195,6 +237,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCBInteresActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -207,12 +252,18 @@
             <Property name="text" type="java.lang.String" value="Periodo"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTPeriodo">
+        <Component class="javax.swing.JTextField" name="jTFPeriodo">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFPeriodoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jBCalcular">
           <Properties>
             <Property name="text" type="java.lang.String" value="Calcular"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBCalcularActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
@@ -230,6 +281,9 @@
           </SubComponents>
         </Container>
         <Component class="javax.swing.JTextField" name="jTFInteres">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFInteresActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
