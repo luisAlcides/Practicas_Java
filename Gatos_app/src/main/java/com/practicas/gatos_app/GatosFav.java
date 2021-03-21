@@ -1,15 +1,16 @@
+
+
 package com.practicas.gatos_app;
 
 /**
  *
  * @author Alcides Blandon
  */
-public class Gatos {
-
+public class GatosFav {
     String id;
-    String url;
-    String apikey = "50f4b7a9-2ab2-4c09-9889-f4c4e58a9ea9";
-    String image;
+    String image_id;
+    String apikey= "74668d02-a299-40ae-bb05-130d2e65c227"; 
+    Imagex image;        
 
     public String getId() {
         return id;
@@ -19,12 +20,12 @@ public class Gatos {
         this.id = id;
     }
 
-    public String getUrl() {
-        return url;
+    public String getImage_id() {
+        return image_id;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImage_id(String image_id) {
+        this.image_id = image_id;
     }
 
     public String getApikey() {
@@ -35,12 +36,14 @@ public class Gatos {
         this.apikey = apikey;
     }
 
-    public String getImage() {
+    public Imagex getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(Imagex image) {
         this.image = image;
     }
-
+    
+    
+    
 }

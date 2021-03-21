@@ -1,5 +1,6 @@
 package com.practicas.gatos_app;
 
+import java.io.IOException;
 import javax.swing.JOptionPane;
 
 /**
@@ -8,7 +9,7 @@ import javax.swing.JOptionPane;
  */
 public class Inicio {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         int opcionMenu = -1;
         String[] botones = {

@@ -158,7 +158,7 @@ public class AccesoSistema extends javax.swing.JFrame {
         if (usuario.equals("admin") && contrasena.equals("admin") && tipoUsuario.equals("Administrador")) {
             JOptionPane.showMessageDialog(null, "Bienvenido al sistema", "Sistema", JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
-            Principal principal = new Principal();
+            MAdministrar principal = new MAdministrar();
             principal.setVisible(true);
             
         } else {
