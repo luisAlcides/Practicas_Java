@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LUNES.SGIS;
+package VIERNES.SGIS;
 
 import java.awt.event.KeyEvent;
 import java.util.regex.Matcher;
@@ -302,8 +302,8 @@ public class FrmNUsuario extends javax.swing.JInternalFrame {
             fila[0] = jTFNombres.getText();
             fila[1] = jTFApellidos.getText();
             fila[2] = jTFCorreo.getText();
-            fila[4] = jTADireccion.getText();
-            fila[0] = jCBCargo.getSelectedItem().toString();
+            fila[3] = jTADireccion.getText();
+            fila[4] = jCBCargo.getSelectedItem().toString();
 
             modelo.addRow(fila);
             jTbUsuarios.setModel(modelo);

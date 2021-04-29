@@ -5,7 +5,10 @@
  */
 package LUNES;
 
-import LUNES.SGIS.FrmNUsuario;
+import VIERNES.SGIS.FrmNUsuario;
+import VIERNES.SGIS.JIFComprobantes;
+import VIERNES.SGIS.JIFInventario;
+import VIERNES.SGIS.JIFMantenimiento;
 import javax.swing.JOptionPane;
 
 /**
@@ -37,6 +40,8 @@ public class MAdministrar extends javax.swing.JFrame {
         MNUsuario = new javax.swing.JMenuItem();
         MUtilidades = new javax.swing.JMenu();
         jMIUtilidades = new javax.swing.JMenuItem();
+        jMIComprobante = new javax.swing.JMenuItem();
+        jMIInvenatario = new javax.swing.JMenuItem();
         MAyuda = new javax.swing.JMenu();
         MAcerca = new javax.swing.JMenuItem();
 
@@ -66,6 +71,22 @@ public class MAdministrar extends javax.swing.JFrame {
             }
         });
         MUtilidades.add(jMIUtilidades);
+
+        jMIComprobante.setText("Comprobantes");
+        jMIComprobante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIComprobanteActionPerformed(evt);
+            }
+        });
+        MUtilidades.add(jMIComprobante);
+
+        jMIInvenatario.setText("Inventario");
+        jMIInvenatario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIInvenatarioActionPerformed(evt);
+            }
+        });
+        MUtilidades.add(jMIInvenatario);
 
         menuBar.add(MUtilidades);
 
@@ -118,12 +139,31 @@ public class MAdministrar extends javax.swing.JFrame {
 
     private void jMIUtilidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIUtilidadesActionPerformed
         // TODO add your handling code here:
-        MAdministrar mAdministrar = new MAdministrar();
+        JIFMantenimiento mantenimiento = new JIFMantenimiento();
         
-        desktopPane.add(mAdministrar);
-        mAdministrar.toFront();
-        mAdministrar.show();
+        desktopPane.add(mantenimiento);
+        mantenimiento.toFront();
+        mantenimiento.show();
     }//GEN-LAST:event_jMIUtilidadesActionPerformed
+
+    private void jMIComprobanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIComprobanteActionPerformed
+        // TODO add your handling code here:
+        
+        JIFComprobantes comprobantes = new JIFComprobantes();
+        desktopPane.add(comprobantes);
+        comprobantes.toFront();
+        comprobantes.show();
+    }//GEN-LAST:event_jMIComprobanteActionPerformed
+
+    private void jMIInvenatarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIInvenatarioActionPerformed
+        // TODO add your handling code here:
+        
+        JIFInventario inventario = new JIFInventario();
+        desktopPane.add(inventario);
+        inventario.toFront();
+        inventario.show();
+        
+    }//GEN-LAST:event_jMIInvenatarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,6 +222,8 @@ public class MAdministrar extends javax.swing.JFrame {
     private javax.swing.JMenu MUtilidades;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem jMIComprobante;
+    private javax.swing.JMenuItem jMIInvenatario;
     private javax.swing.JMenuItem jMIUtilidades;
     private javax.swing.JMenuBar menuBar;
     // End of variables declaration//GEN-END:variables
