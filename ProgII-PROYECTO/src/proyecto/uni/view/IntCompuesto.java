@@ -5,17 +5,79 @@
  */
 package proyecto.uni.view;
 
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import proyecto.uni.controller.DatosGenerales;
+import proyecto.uni.model.InteresCompuesto;
+import proyecto.uni.model.InteresSimple;
+
 /**
  *
- * @author HP14
+ * 
  */
 public class IntCompuesto extends javax.swing.JFrame {
 
     /**
      * Creates new form IntCompuesto
      */
+    private List<JRadioButton> radioButtonsC;
+    private List<String> comboBoxC;
+    private List<JButton> botonesC;
+    private List<JFormattedTextField> textFieldsC;
+    private List<JLabel> labelsC;
+    private DecimalFormat df;
+
+    DatosGenerales datos = new DatosGenerales();
+    double monto = 0;
+    double capital = 0;
+    double tasa = 0;
+    double periodo = 0;
+    
+
+    
+    
     public IntCompuesto() {
         initComponents();
+        
+        comboBoxC = new ArrayList<>();
+        radioButtonsC = new ArrayList<>();
+        botonesC = new ArrayList<>();
+        textFieldsC = new ArrayList<>();
+        labelsC = new ArrayList<>();
+        df = new DecimalFormat("#,###,###.##");
+
+        radioButtonsC.add(RadioMonto);
+        radioButtonsC.add(RadioCapital);
+        radioButtonsC.add(RadioTasa);
+        radioButtonsC.add(RadioPeriodo);
+
+        comboBoxC.add(CmbPerido.getItemAt(0));
+        comboBoxC.add(CmbPerido.getItemAt(1));
+        comboBoxC.add(CmbPerido.getItemAt(2));
+        comboBoxC.add(CmbPerido.getItemAt(3));
+        comboBoxC.add(CmbPerido.getItemAt(4));
+        comboBoxC.add(CmbPerido.getItemAt(5));
+        comboBoxC.add(CmbPerido.getItemAt(6));
+        comboBoxC.add(CmbPerido.getItemAt(7));
+
+        textFieldsC.add(TxtMonto);
+        textFieldsC.add(TxtCapital);
+        textFieldsC.add(TxtTasa);
+        textFieldsC.add(TxtPeriodo);
+
+        botonesC.add(BtnLimpiar);
+        botonesC.add(BtnCalcular);
+        botonesC.add(BtnSalir);
+        
+        datos.agregarDatos(botonesC, textFieldsC, radioButtonsC, labelsC);
+
+        
     }
 
     /**
@@ -27,22 +89,23 @@ public class IntCompuesto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btGroupCompuesto = new javax.swing.ButtonGroup();
         JPanel = new javax.swing.JPanel();
         LblTitulo = new javax.swing.JLabel();
         LblSelecione = new javax.swing.JLabel();
         RadioMonto = new javax.swing.JRadioButton();
-        TxtMonto = new javax.swing.JTextField();
         RadioCapital = new javax.swing.JRadioButton();
-        TxtCapital = new javax.swing.JTextField();
         RadioTasa = new javax.swing.JRadioButton();
-        TxtTasa = new javax.swing.JTextField();
         LblCapítalizacion = new javax.swing.JLabel();
         RadioPeriodo = new javax.swing.JRadioButton();
-        TxtPeriodo = new javax.swing.JTextField();
         BtnSalir = new javax.swing.JButton();
         BtnCalcular = new javax.swing.JButton();
         BtnLimpiar = new javax.swing.JButton();
         CmbPerido = new javax.swing.JComboBox<>();
+        TxtCapital = new javax.swing.JFormattedTextField();
+        TxtTasa = new javax.swing.JFormattedTextField();
+        TxtMonto = new javax.swing.JFormattedTextField();
+        TxtPeriodo = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,6 +120,7 @@ public class IntCompuesto extends javax.swing.JFrame {
         LblSelecione.setForeground(new java.awt.Color(0, 0, 0));
         LblSelecione.setText("Seleccione que variable a calcular.");
 
+        btGroupCompuesto.add(RadioMonto);
         RadioMonto.setForeground(new java.awt.Color(0, 0, 0));
         RadioMonto.setText("Monto");
         RadioMonto.addActionListener(new java.awt.event.ActionListener() {
@@ -65,13 +129,7 @@ public class IntCompuesto extends javax.swing.JFrame {
             }
         });
 
-        TxtMonto.setBackground(new java.awt.Color(255, 255, 255));
-        TxtMonto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtMontoActionPerformed(evt);
-            }
-        });
-
+        btGroupCompuesto.add(RadioCapital);
         RadioCapital.setForeground(new java.awt.Color(0, 0, 0));
         RadioCapital.setText("Capital");
         RadioCapital.addActionListener(new java.awt.event.ActionListener() {
@@ -80,15 +138,12 @@ public class IntCompuesto extends javax.swing.JFrame {
             }
         });
 
-        TxtCapital.setBackground(new java.awt.Color(255, 255, 255));
-
+        btGroupCompuesto.add(RadioTasa);
         RadioTasa.setForeground(new java.awt.Color(0, 0, 0));
         RadioTasa.setText("Tasa");
-
-        TxtTasa.setBackground(new java.awt.Color(255, 255, 255));
-        TxtTasa.addActionListener(new java.awt.event.ActionListener() {
+        RadioTasa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtTasaActionPerformed(evt);
+                RadioTasaActionPerformed(evt);
             }
         });
 
@@ -96,6 +151,7 @@ public class IntCompuesto extends javax.swing.JFrame {
         LblCapítalizacion.setForeground(new java.awt.Color(0, 0, 0));
         LblCapítalizacion.setText("Capitalizable");
 
+        btGroupCompuesto.add(RadioPeriodo);
         RadioPeriodo.setForeground(new java.awt.Color(0, 0, 0));
         RadioPeriodo.setText("Período");
         RadioPeriodo.addActionListener(new java.awt.event.ActionListener() {
@@ -103,8 +159,6 @@ public class IntCompuesto extends javax.swing.JFrame {
                 RadioPeriodoActionPerformed(evt);
             }
         });
-
-        TxtPeriodo.setBackground(new java.awt.Color(255, 255, 255));
 
         BtnSalir.setBackground(new java.awt.Color(255, 255, 255));
         BtnSalir.setForeground(new java.awt.Color(0, 0, 0));
@@ -129,52 +183,80 @@ public class IntCompuesto extends javax.swing.JFrame {
         BtnLimpiar.setText("Limpiar");
 
         CmbPerido.setForeground(new java.awt.Color(0, 0, 0));
-        CmbPerido.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Años ", "Meses", "Semestres ", "Trimestres", "Cuatrimestres", "Bimestres ", "Días 360", "Días 365" }));
+        CmbPerido.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Años", "Meses", "Semestres", "Trimestres", "Cuatrimestres", "Bimestres", "Dias 360", "Dias 365" }));
+        CmbPerido.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                CmbPeridoItemStateChanged(evt);
+            }
+        });
+        CmbPerido.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CmbPeridoMouseClicked(evt);
+            }
+        });
+        CmbPerido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CmbPeridoActionPerformed(evt);
+            }
+        });
+
+        TxtCapital.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,###.00"))));
+
+        TxtTasa.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00%"))));
+
+        TxtMonto.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,###.00"))));
+
+        TxtPeriodo.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
 
         javax.swing.GroupLayout JPanelLayout = new javax.swing.GroupLayout(JPanel);
         JPanel.setLayout(JPanelLayout);
         JPanelLayout.setHorizontalGroup(
             JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JPanelLayout.createSequentialGroup()
-                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JPanelLayout.createSequentialGroup()
-                        .addGap(229, 229, 229)
-                        .addComponent(LblTitulo))
-                    .addGroup(JPanelLayout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(LblSelecione)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(RadioPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RadioTasa, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RadioCapital, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RadioMonto, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
-                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(JPanelLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, JPanelLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
                         .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TxtCapital, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtMonto, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(JPanelLayout.createSequentialGroup()
-                                .addComponent(TxtTasa, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(LblCapítalizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(52, 52, 52))
-                    .addGroup(JPanelLayout.createSequentialGroup()
-                        .addComponent(TxtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(CmbPerido, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
-                .addComponent(BtnLimpiar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                .addComponent(BtnCalcular)
-                .addGap(128, 128, 128)
-                .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
+                                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(RadioPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RadioTasa, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RadioCapital, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RadioMonto, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(54, 54, 54)
+                                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(JPanelLayout.createSequentialGroup()
+                                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(JPanelLayout.createSequentialGroup()
+                                                .addComponent(TxtTasa, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(23, 23, 23)
+                                                .addComponent(CmbPerido, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(JPanelLayout.createSequentialGroup()
+                                                .addGap(1, 1, 1)
+                                                .addComponent(TxtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(LblCapítalizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
+                                    .addGroup(JPanelLayout.createSequentialGroup()
+                                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(TxtCapital)
+                                            .addComponent(TxtMonto, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE))
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(JPanelLayout.createSequentialGroup()
+                                .addComponent(BtnLimpiar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(BtnCalcular)
+                                .addGap(128, 128, 128)
+                                .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(66, 66, 66))))
+                    .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(JPanelLayout.createSequentialGroup()
+                            .addGap(229, 229, 229)
+                            .addComponent(LblTitulo))
+                        .addGroup(JPanelLayout.createSequentialGroup()
+                            .addGap(38, 38, 38)
+                            .addComponent(LblSelecione))))
+                .addContainerGap())
         );
         JPanelLayout.setVerticalGroup(
             JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,34 +265,30 @@ public class IntCompuesto extends javax.swing.JFrame {
                 .addComponent(LblTitulo)
                 .addGap(31, 31, 31)
                 .addComponent(LblSelecione)
-                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JPanelLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(RadioMonto)
-                            .addComponent(TxtMonto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(29, 29, 29)
-                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(RadioCapital)
-                            .addComponent(TxtCapital, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(RadioTasa)
-                            .addComponent(TxtTasa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LblCapítalizacion))
-                        .addGap(33, 33, 33)
-                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(RadioPeriodo)
-                            .addComponent(TxtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CmbPerido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 115, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BtnCalcular)
-                            .addComponent(BtnSalir)
-                            .addComponent(BtnLimpiar))
-                        .addGap(23, 23, 23))))
+                .addGap(26, 26, 26)
+                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RadioMonto)
+                    .addComponent(TxtMonto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RadioCapital)
+                    .addComponent(TxtCapital, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RadioTasa)
+                    .addComponent(CmbPerido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtTasa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RadioPeriodo)
+                    .addComponent(LblCapítalizacion)
+                    .addComponent(TxtPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnCalcular)
+                    .addComponent(BtnSalir)
+                    .addComponent(BtnLimpiar))
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -218,8 +296,8 @@ public class IntCompuesto extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addComponent(JPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,23 +312,32 @@ public class IntCompuesto extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RadioMontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioMontoActionPerformed
-        // TODO add your handling code here:
+         if (radioButtonsC.get(0).isSelected()) {
+            TxtMonto.setEnabled(false);
+            TxtPeriodo.setEnabled(true);
+            TxtCapital.setEnabled(true);
+            TxtTasa.setEnabled(true);
+        }
     }//GEN-LAST:event_RadioMontoActionPerformed
 
-    private void TxtMontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtMontoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TxtMontoActionPerformed
-
     private void RadioCapitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioCapitalActionPerformed
-        // TODO add your handling code here:
+       if (radioButtonsC.get(1).isSelected()) {
+            TxtCapital.setEnabled(false);
+            TxtPeriodo.setEnabled(true);
+            TxtMonto.setEnabled(true);
+            TxtTasa.setEnabled(true);
+        }
     }//GEN-LAST:event_RadioCapitalActionPerformed
 
-    private void TxtTasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTasaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TxtTasaActionPerformed
-
     private void RadioPeriodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioPeriodoActionPerformed
-        // TODO add your handling code here:
+      if (radioButtonsC.get(3).isSelected()) {
+            TxtPeriodo.setEnabled(false);
+            TxtMonto.setEnabled(true);
+            TxtCapital.setEnabled(true);
+            TxtTasa.setEnabled(true);
+        }
+        
+        
     }//GEN-LAST:event_RadioPeriodoActionPerformed
 
     private void BtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSalirActionPerformed
@@ -260,8 +347,89 @@ public class IntCompuesto extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSalirActionPerformed
 
     private void BtnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalcularActionPerformed
-        // TODO add your handling code here:
+        if (radioButtonsC.get(0).isSelected()) {
+            capital = Double.parseDouble(TxtCapital.getText());
+            tasa = Double.parseDouble(TxtTasa.getText());
+            periodo = Double.parseDouble(TxtPeriodo.getText());
+            InteresCompuesto ic = new InteresCompuesto(monto, capital, tasa, periodo, radioButtonsC, comboBoxC);
+            ic.cICMonto(ic.getCapital(), ic.getTasa(), ic.getPerido());
+            TxtMonto.setText(String.valueOf(df.format(ic.getMonto())));
+        }
+        
+        if (radioButtonsC.get(1).isSelected()) {
+            monto = Double.parseDouble(TxtMonto.getText());
+            tasa = Double.parseDouble(TxtTasa.getText());
+            periodo = Double.parseDouble(TxtPeriodo.getText());
+            InteresCompuesto ic = new InteresCompuesto(monto, capital, tasa, periodo, radioButtonsC, comboBoxC);
+            ic.cICCapital(ic.getMonto(), ic.getTasa(), ic.getPerido());
+            TxtCapital.setText(String.valueOf(ic.getCapital()));
+        }
+        
+         if (radioButtonsC.get(2).isSelected()) {
+            monto = Double.parseDouble(TxtMonto.getText());
+            capital = Double.parseDouble(TxtCapital.getText());
+            periodo = Double.parseDouble(TxtPeriodo.getText());
+            InteresCompuesto ic = new InteresCompuesto(monto, capital, tasa, periodo, radioButtonsC, comboBoxC);
+            ic.cICTasa(ic.getMonto(), ic.getCapital(), ic.getPerido());
+            TxtTasa.setText(String.valueOf(ic.getTasa()));
+        }
+         
+          if (radioButtonsC.get(3).isSelected()) {
+            monto = Double.parseDouble(TxtMonto.getText());
+            capital = Double.parseDouble(TxtCapital.getText());
+            tasa = Double.parseDouble(TxtTasa.getText());
+            InteresCompuesto ic = new InteresCompuesto(monto, capital, tasa, periodo, radioButtonsC, comboBoxC);
+            ic.cICPeriodo(ic.getMonto(), ic.getCapital(), ic.getTasa());
+            TxtPeriodo.setText(String.valueOf(ic.getPerido()));
+        }
     }//GEN-LAST:event_BtnCalcularActionPerformed
+
+    private void RadioTasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioTasaActionPerformed
+         if (radioButtonsC.get(2).isSelected()) {
+            TxtTasa.setEnabled(false);
+            TxtMonto.setEnabled(true);
+            TxtCapital.setEnabled(true);
+            TxtPeriodo.setEnabled(true);
+        }
+    }//GEN-LAST:event_RadioTasaActionPerformed
+
+    private void CmbPeridoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CmbPeridoMouseClicked
+      
+    }//GEN-LAST:event_CmbPeridoMouseClicked
+
+    private void CmbPeridoItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_CmbPeridoItemStateChanged
+     
+    }//GEN-LAST:event_CmbPeridoItemStateChanged
+
+    private void CmbPeridoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbPeridoActionPerformed
+            
+        String debeingresar = "Debe ingresar periodo en " ;
+        
+        if (CmbPerido.getItemAt(0).equals(CmbPerido.getItemAt(0))) {
+            LblCapítalizacion.setText(debeingresar + CmbPerido.getItemAt(0));
+        }
+        if (CmbPerido.getItemAt(1).equals("Meses")) {
+            LblCapítalizacion.setText(debeingresar + CmbPerido.getItemAt(1));
+        }
+        if (CmbPerido.getItemAt(2).equals("Semestral")) {
+            LblCapítalizacion.setText(debeingresar + CmbPerido.getItemAt(2));
+        }
+        if (CmbPerido.getItemAt(3).equals("Trimestral")) {
+            LblCapítalizacion.setText(debeingresar+ CmbPerido.getItemAt(3));
+        }
+        if (CmbPerido.getItemAt(4).equals("Cuatrimestral")) {
+            LblCapítalizacion.setText("Debe ingresar periodo en "+ CmbPerido.getItemAt(4));
+        }
+        if (CmbPerido.getItemAt(5).equals("Bimestral")) {
+            LblCapítalizacion.setText("Debe ingresar periodo en " +CmbPerido.getItemAt(5));
+        }
+        if (CmbPerido.getItemAt(6).equals("Dias 360")) {
+            LblCapítalizacion.setText("Debe ingresar periodo " +CmbPerido.getItemAt(6));
+        }
+        if (CmbPerido.getItemAt(7).equals("Dias 365")) {
+            LblCapítalizacion.setText("Debe ingresar periodo en " + CmbPerido.getItemAt(7));
+        }
+    }//GEN-LAST:event_CmbPeridoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -311,9 +479,10 @@ public class IntCompuesto extends javax.swing.JFrame {
     private javax.swing.JRadioButton RadioMonto;
     private javax.swing.JRadioButton RadioPeriodo;
     private javax.swing.JRadioButton RadioTasa;
-    private javax.swing.JTextField TxtCapital;
-    private javax.swing.JTextField TxtMonto;
-    private javax.swing.JTextField TxtPeriodo;
-    private javax.swing.JTextField TxtTasa;
+    private javax.swing.JFormattedTextField TxtCapital;
+    private javax.swing.JFormattedTextField TxtMonto;
+    private javax.swing.JFormattedTextField TxtPeriodo;
+    private javax.swing.JFormattedTextField TxtTasa;
+    private javax.swing.ButtonGroup btGroupCompuesto;
     // End of variables declaration//GEN-END:variables
 }

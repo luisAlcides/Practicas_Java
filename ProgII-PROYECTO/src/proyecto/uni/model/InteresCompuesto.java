@@ -1,43 +1,43 @@
+
+
 package proyecto.uni.model;
 
 import java.util.List;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import proyecto.uni.controller.DatosGenerales;
-import proyecto.uni.view.IntSimple;
 
 /**
  *
  * @author Alcides Blandon
  */
-public class InteresSimple extends Interes {
+public class InteresCompuesto extends Interes{
 
-    List<JRadioButton> radioButtons;
-    List<String> tiempoTaza;
-    DatosGenerales datos;
-
-    public InteresSimple() {
+    private List<JRadioButton> radioButtons;
+    private List<String> tiempoTaza;
+    private DatosGenerales datos;
+    
+    public InteresCompuesto() {
     }
 
-    public InteresSimple(double monto, double capital, double tasa, double perido, List<JRadioButton> radioButtons, List<String> tiempoDeTaza) {
+    public InteresCompuesto(double monto, double capital, double tasa, double perido,
+            List<JRadioButton> radioButtons,List<String> tiempoDeTaza) {
         super(monto, capital, tasa, perido, tiempoDeTaza);
         this.radioButtons = radioButtons;
         this.tiempoTaza = tiempoDeTaza;
         datos = new DatosGenerales();
-        IntSimple intSimple = new IntSimple();
-
     }
 
-    //cIS -> calcular interes simple
-    public void cISMonto(double capital, double tasa, double periodo) {
+    //cIC -> calcular interes Compuesto
+    public void cICMonto(double capital, double tasa, double periodo) {
         double resultado = 0;
         tasa = tasa / 100;
-        resultado = capital * (1 + (tasa * periodo));
+        resultado = capital*(Math.pow(1+tasa, periodo));
         setMonto(resultado);
 
     }
 
-    public void cISCapital(double monto, double tasa, double periodo) {
+    public void cICCapital(double monto, double tasa, double periodo) {
         double resultado = 0;
         tasa = tasa / 100;
         resultado = monto / (1 + (tasa * periodo));
@@ -45,14 +45,14 @@ public class InteresSimple extends Interes {
 
     }
 
-    public void cISTasa(double monto, double capital, double periodo) {
+    public void cICTasa(double monto, double capital, double periodo) {
         double resultado = 0;
         resultado = ((monto / capital) - 1) / periodo;
         setTasa(resultado * 100);
 
     }
 
-    public void cISPeriodo(double monto, double capital, double tasa) {
+    public void cICPeriodo(double monto, double capital, double tasa) {
         double resultado = 0;
         tasa = tasa / 100;
         resultado = ((monto / capital) - 1) / tasa;
@@ -72,4 +72,6 @@ public class InteresSimple extends Interes {
 
     }
 
+    
+    
 }
